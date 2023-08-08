@@ -6,7 +6,6 @@ Our analyses (lagged regressions) will focus on 3 main DVs:
 2. Number of lifetime citations per year, at the level of the author
 3. Percentile Ranking per year, at the level of the author
 
-` `  
 A helpful table for creating the tables needed for the 3 DVs is a table of the number of citations per year, at the level of the work:
 
 - [get_work_cites_per_yr.sql]:
@@ -15,7 +14,6 @@ A helpful table for creating the tables needed for the 3 DVs is a table of the n
     - for a given work, finds all the works that cites it
       🠊 groups by work id and year, counting the number of rows
 
-` `  
 The following code was used to create tables for the analyses of each of the 3 DVs:
 
 - [get_author_cites_per_yr.sql]:
@@ -36,11 +34,7 @@ The following code was used to create tables for the analyses of each of the 3 D
   - uses authors table and the previous author_cites_per_yr table
     - groups on concept, start year, and academic age, calculating percentile rank by citation counts
 
-` `  
 Correlation matrices for each of the 3 DVs can be found in the [figures folder]. There are 2 figures for each DV: one of a single correlation matrix across all concepts and one of multiple correlation matrices, grouped by concept. The code for the correlation matrices is in the [correlation_matrices] Jupyter Notebook.
-
-` `  
-` `
 
 ## Note: Dataset Filtering
 
@@ -49,10 +43,10 @@ We are only including the complete citation histories of all works published bet
 - 1665 as minimum cutoff because that was the seminal year of the 1st academic journal, Journal des Sçavans
 - 2013 as maximum cutoff due to concerns of right-censoring (10-yr horizon for lifetime citations means 2013 is the maximum)
 
-[get_work_cites_per_yr.sql]: ../FHA_docs/primary_analysis/get_work_cites_per_yr.sql
-[get_author_cites_per_yr.sql]: ../FHA_docs/primary_analysis/get_author_cites_per_yr.sql
-[get_author_rank.sql]: ../FHA_docs/primary_analysis/get_author_rank.sql
-[get_lifetime_cites.sql]: ../FHA_docs/primary_analysis/get_lifetime_cites.sql
-[get_work_cites_per_yr.sql]: ../FHA_docs/primary_analysis/get_work_cites_per_yr.sql
-[figures folder]: ../FHA_docs/primary_analysis/figures
-[correlation_matrices]: ../FHA_docs/primary_analysis/correlation_matrices.ipynb
+[get_work_cites_per_yr.sql]: ../primary_analysis/get_work_cites_per_yr.sql
+[get_author_cites_per_yr.sql]: ../primary_analysis/get_author_cites_per_yr.sql
+[get_author_rank.sql]: ../primary_analysis/get_author_rank.sql
+[get_lifetime_cites.sql]: ../primary_analysis/get_lifetime_cites.sql
+[get_work_cites_per_yr.sql]: ../primary_analysis/get_work_cites_per_yr.sql
+[figures folder]: ../primary_analysis/figures
+[correlation_matrices]: ../primary_analysis/correlation_matrices.ipynb

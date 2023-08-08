@@ -59,8 +59,8 @@ BigQuery has a 6 hr limit for queries, and trying to format the entire works tab
 [BigQuery]: https://cloud.google.com/bigquery
 [documentation]: https://docs.openalex.org/download-all-data/upload-to-your-database/load-to-a-data-warehouse
 [upload_authors.py]: ../savio_to_bigquery/upload_authors.py
-[upload_works.py]: ../FHA_docs/savio_to_bigquery/upload_works.py
-[format_author.sql]: ../FHA_docs/savio_to_bigquery/format_author.sql
-[format_work_author.sql]: ../FHA_docs/savio_to_bigquery/format_work_author.sql
-[format_work_cited.sql]: ../FHA_docs/savio_to_bigquery/format_work_cited.sql
-[format_work_concept.sql]: ../FHA_docs/savio_to_bigquery/format_work_concept.sql
+[upload_works.py]: ../savio_to_bigquery/upload_works.py
+[format_author.sql]: ../savio_to_bigquery/format_author.sql
+[format_work_author.sql]: ../savio_to_bigquery/format_work_author.sql
+[format_work_cited.sql]: ../savio_to_bigquery/format_work_cited.sql
+[format_work_concept.sql]: ../savio_to_bigquery/format_work_concept.sql
