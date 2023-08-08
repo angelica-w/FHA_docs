@@ -3,7 +3,8 @@
   - Before 1815 ⇒ era 1
   - 1816-1918 ⇒ era 2
   - 1919-1945 ⇒ era 3
-  - 1946-present ⇒ era 4
+  - 1946-1989 ⇒ era 4
+  - 1990-present ⇒ era 5
 
 Parameters:
 Works table:
@@ -20,7 +21,7 @@ Table with a categorical era variable depending on when a given work was publish
     id                  | STRING    | Unique OpenAlex ID for work
     publication_year    | INT       | yr this work was published
     concept_0           | STRING    | top level 0 concept assigned to work
-    era                 | INT       | the era a work falls under (1, 2, 3, 4)
+    era                 | INT       | the era a work falls under (1, 2, 3, 4, 5)
 */
 
 SELECT id, publication_year, concept_0,
@@ -28,7 +29,9 @@ SELECT id, publication_year, concept_0,
     WHEN (publication_year <= 1815) THEN 1
     WHEN (publication_year >= 1816) AND (publication_year <= 1918) THEN 2
     WHEN (publication_year >= 1919) AND (publication_year <= 1945) THEN 3
-    WHEN (publication_year >= 1946) THEN 4 
+    WHEN (publication_year >= 1946) AND (publication_year <= 1989) THEN 4
+    WHEN (publication_year >= 1990) THEN 5
+    WHEN (publication)
     ELSE NULL 
   END AS era
 FROM `WORKS_TABLE` 
