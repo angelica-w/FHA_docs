@@ -13,8 +13,8 @@ The dataset was collected and used by:
 This research used the [Savio computational cluster resource] provided by the Berkeley Research Computing program at the University of California, Berkeley (supported by the UC Berkeley Chancellor, Vice Chancellor for Research, and Chief Information Officer).
 
 [OpenAlex]: https://openalex.org/
-[savio-to-bigquery]: ../FHA_docs/savio_to_bigquery
-[primary-analysis]: ../FHA_docs/primary_analysis
-[exploratory-analysis]: ../FHA_docs/exploratory_analysis
-[descriptives]: ../FHA_docs/descriptives
+[savio_to_bigquery]: ../savio_to_bigquery
+[primary_analysis]: ../primary_analysis
+[exploratory_analysis]: ../exploratory_analysis
+[descriptives]: ../descriptives
 [Savio computational cluster resource]: https://docs-research-it.berkeley.edu/services/high-performance-computing/overview/
