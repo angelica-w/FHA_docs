@@ -14,7 +14,7 @@ This research used the [Savio computational cluster resource] provided by the Be
 
 [OpenAlex]: https://openalex.org/
 [savio_to_bigquery]: ../main/savio_to_bigquery
-[primary_analysis]: ../primary_analysis
-[exploratory_analysis]: ../exploratory_analysis
-[descriptives]: ../descriptives
+[primary_analysis]: ../main/primary_analysis
+[exploratory_analysis]: ../main/exploratory_analysis
+[descriptives]: ../main/descriptives
 [Savio computational cluster resource]: https://docs-research-it.berkeley.edu/services/high-performance-computing/overview/
